@@ -1,2 +1,4 @@
-# netuitive-packages-browser
-A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of an application from the browser's perspective.
+netuitive.packages.browser 1.0.0
+----------------------
+
+Initial production release of the package for monitoring browser timings.

@@ -1,0 +1,20 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "METRIC_META",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Browser",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "BROWSER",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : ".*",
+      "properties" : {
+        "sparseDataStrategy" : "ReplaceWithZero"
+      }
+    } ]
+  }
+}
