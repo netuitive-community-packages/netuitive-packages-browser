@@ -1,4 +1,12 @@
-netuitive.packages.browser 1.0.0
-----------------------
+#netuitive.packages.browser 1.1.0
 
-Initial production release of the package for monitoring browser timings.
+##Release History
+
+###Version 1.1.0
+
+* Defined units for the metrics.
+* Added summary dashboard.
+
+###Version 1.0.0
+
+* Initial production release of the package for monitoring browser timings.

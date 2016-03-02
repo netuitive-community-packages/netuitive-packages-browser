@@ -13,7 +13,10 @@
     "metrics" : [ {
       "match" : ".*",
       "properties" : {
-        "sparseDataStrategy" : "ReplaceWithZero"
+        "sparseDataStrategy" : "ReplaceWithZero",
+        "tags" : {
+          "unit" : "ms"
+        }
       }
     } ]
   }
