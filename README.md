@@ -1,6 +1,10 @@
-#netuitive.packages.browser 1.1.0
+#netuitive.packages.browser 1.2.0
 
 ##Release History
+
+###Version 1.2.0
+
+* Added browser-specific element detail page.
 
 ###Version 1.1.0
 
