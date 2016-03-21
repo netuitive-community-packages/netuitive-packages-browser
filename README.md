@@ -5,6 +5,7 @@
 ###Version 1.2.0
 
 * Added browser-specific element detail page.
+* Fixed a bug where the collected percent had units as milliseconds.
 
 ###Version 1.1.0
 
