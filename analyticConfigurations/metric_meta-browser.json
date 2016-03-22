@@ -11,7 +11,15 @@
       "elementTags" : null
     },
     "metrics" : [ {
-      "match" : ".*",
+      "match" : "netuitive.rum.*time",
+      "properties" : {
+        "sparseDataStrategy" : "ReplaceWithZero",
+        "tags" : {
+          "unit" : "ms"
+        }
+      }
+    }, {
+      "match" : "netuitive.rum.networklatency",
       "properties" : {
         "sparseDataStrategy" : "ReplaceWithZero",
         "tags" : {
