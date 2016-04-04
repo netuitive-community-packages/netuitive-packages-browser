@@ -26,6 +26,25 @@
           "unit" : "ms"
         }
       }
+    }, {
+      "match" : "netuitive.errors.errorcount",
+      "properties" : {
+        "sparseDataStrategy" : "ReplaceWithZero",
+        "statistic" : "SUM"
+      }
+    }, {
+      "match" : "netuitive.rum.requestcount",
+      "properties" : {
+        "statistic" : "SUM"
+      }
+    }, {
+      "match" : "netuitive.errors.errorpercent",
+      "properties" : {
+        "tags" : {
+          "unit" : "percent"
+        },
+        "validmax" : 100
+      }
     } ]
   }
 }
