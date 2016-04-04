@@ -259,7 +259,7 @@
       "created" : "2016-03-16T21:50:52Z",
       "updated" : "2016-03-16T21:50:52Z"
     } ],
-    "type" : "DEFAULT",
+    "type" : "BROWSER",
     "private" : false
   }
 }
