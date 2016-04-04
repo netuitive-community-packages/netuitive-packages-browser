@@ -1,8 +1,13 @@
-#netuitive.packages.browser 1.2.0
+#netuitive.packages.browser 1.3.0
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_browser_datasource.htm).
 
 ##Release History
+
+###Version 1.3.0
+
+* Added configuration settings for new metrics.
+* Enhanced the Browser Summary dashboard.
 
 ###Version 1.2.0
 
