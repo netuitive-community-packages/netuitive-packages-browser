@@ -4,6 +4,10 @@ For detailed information on this package, please refer to the [online documentat
 
 ##Release History
 
+###Version 1.3.1
+
+* Fixed bug in one of the computed metrics.
+
 ###Version 1.3.0
 
 * Added configuration settings for new metrics.

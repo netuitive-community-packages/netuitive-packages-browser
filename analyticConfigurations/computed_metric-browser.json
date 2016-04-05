@@ -13,7 +13,7 @@
     "metrics" : [ {
       "match" : "netuitive.rum.requestcount",
       "properties" : {
-        "expression" : "data['netuitive.rum.totalresponsetime'].count",
+        "expression" : "data['netuitive.rum.totalresponsetime'].cnt",
         "fqn" : "netuitive.rum.requestcount"
       }
     }, {
