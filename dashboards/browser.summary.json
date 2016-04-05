@@ -22,6 +22,7 @@
       "description" : null,
       "widgetType" : "multi-metric-table",
       "properties" : {
+        "visualization" : null,
         "showElementTotal" : "true",
         "selectedAttributes" : "[]",
         "elementScopeTags" : "[]",
@@ -38,13 +39,13 @@
         "showHighest" : "true",
         "metric_fqn" : null,
         "width" : "auto",
-        "metrics" : "[{\"fqn\":\"netuitive.rum.totalresponsetime\",\"aggFns\":[],\"aggFn\":\"avg\",\"unit\":null},{\"fqn\":\"netuitive.rum.networklatency\",\"aggFns\":[],\"aggFn\":\"avg\"},{\"fqn\":\"netuitive.rum.domprocessingtime\",\"aggFns\":[],\"aggFn\":\"avg\"}]",
+        "metrics" : "[{\"fqn\":\"netuitive.rum.totalresponsetime\",\"aggFns\":[],\"aggFn\":\"avg\",\"unit\":null,\"displayName\":\"Total Response Time\"},{\"fqn\":\"netuitive.rum.networklatency\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Network Latency\"},{\"fqn\":\"netuitive.rum.pageloadtime\",\"aggFns\":[],\"aggFn\":\"avg\",\"displayName\":\"Page Load Time\"}]",
         "selectedTab" : "table"
       },
       "dashboardId" : null,
       "userId" : null,
       "created" : "2016-03-02T04:38:59Z",
-      "updated" : "2016-03-02T05:12:07Z"
+      "updated" : "2016-04-04T15:30:03Z"
     }, {
       "id" : "881624fd-e5b5-47f9-9783-13093e87eb4d",
       "name" : "Browser Metric Aggregation",

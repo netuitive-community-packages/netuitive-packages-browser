@@ -1,0 +1,27 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "COMPUTED_METRIC",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Browser",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "Browser",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "netuitive.rum.requestcount",
+      "properties" : {
+        "expression" : "data['netuitive.rum.totalresponsetime'].count",
+        "fqn" : "netuitive.rum.requestcount"
+      }
+    }, {
+      "match" : "netuitive.errors.errorpercent",
+      "properties" : {
+        "expression" : "(data['netuitive.rum.requestcount'].actual == 0) ? 0 : data['netuitive.errors.errorcount'].actual / data['netuitive.rum.requestcount'].actual",
+        "fqn" : "netuitive.errors.errorpercent"
+      }
+    } ]
+  }
+}
