@@ -117,7 +117,7 @@
         "elementScopeIds" : "[]",
         "elementScopeAttributes" : "[]",
         "groupName" : null,
-        "elementNameContains" : "Library Inventory - List Page",
+        "elementNameContains" : "",
         "showHighest" : "true",
         "metric_fqn" : null,
         "width" : "medium",
@@ -127,7 +127,7 @@
       "dashboardId" : null,
       "userId" : null,
       "created" : "2016-03-16T21:52:50Z",
-      "updated" : "2016-04-05T01:09:47Z"
+      "updated" : "2016-04-05T01:21:32Z"
     }, {
       "id" : "71b9ce17-bf7a-4951-9766-75dd89d59f49",
       "name" : "Attributes",
