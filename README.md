@@ -1,4 +1,4 @@
-#netuitive.packages.browser 1.3.0
+#netuitive.packages.browser 1.3.2
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_browser_datasource.htm).
 
