@@ -1,8 +1,14 @@
-#netuitive.packages.browser 1.3.2
+#netuitive.packages.browser 1.3.3
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_browser_datasource.htm).
 
 ##Release History
+
+###Version 1.3.3
+
+* Fixed bug in the error percent computed metric.
+* Fixed bug with the Events widget on the Element Detail Page.
+* Add widget to show number of page hits on the Element Detail Page.
 
 ###Version 1.3.2
 

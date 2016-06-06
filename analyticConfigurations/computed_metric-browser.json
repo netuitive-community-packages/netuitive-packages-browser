@@ -19,7 +19,7 @@
     }, {
       "match" : "netuitive.errors.errorpercent",
       "properties" : {
-        "expression" : "(data['netuitive.rum.requestcount'].actual == 0) ? 0 : data['netuitive.errors.errorcount'].actual / data['netuitive.rum.requestcount'].actual",
+        "expression" : "(data['netuitive.rum.requestcount'].actual == 0) ? 0 : (data['netuitive.errors.errorcount'].actual / data['netuitive.rum.requestcount'].actual) * 100",
         "fqn" : "netuitive.errors.errorpercent"
       }
     } ]
