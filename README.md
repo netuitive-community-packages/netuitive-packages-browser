@@ -1,8 +1,12 @@
-#netuitive.packages.browser 1.3.3
+#netuitive.packages.browser 1.3.4
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_browser_datasource.htm).
 
 ##Release History
+
+###Version 1.3.4
+
+* Bug fix for the multi-metric widgets on the element detail page.
 
 ###Version 1.3.3
 
