@@ -5,6 +5,9 @@
     "description" : "This policy will raise a WARNING event when the average total response time is higher than is normally expected.",
     "scope" : {
       "elementName" : "",
+      "elementNameExclude" : null,
+      "fqnIncludes" : [ ],
+      "fqnExcludes" : [ ],
       "elementType" : "Browser",
       "elementTags" : { }
     },
@@ -12,6 +15,7 @@
     "conditions" : [ {
       "metric" : "netuitive.rum.totalresponsetime",
       "wildcard" : null,
+      "metricScopeTags" : { },
       "analytic" : "baselineDeviation",
       "operator" : ">",
       "level" : null,
@@ -19,6 +23,7 @@
       "metricThresholdLevel" : null,
       "metricThresholdAnalytic" : null
     } ],
+    "eventConditions" : [ ],
     "actions" : [ {
       "type" : "event",
       "category" : 2
