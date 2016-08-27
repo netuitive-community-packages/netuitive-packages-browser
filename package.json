@@ -1,6 +1,6 @@
 {
   "id" : "netuitive.packages.browser",
-  "version" : "1.3.4",
+  "version" : "1.3.5",
   "manifest" : {
     "name" : "Netuitive Packages Browser",
     "description" : "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of an application from the browser's perspective.",
@@ -12,7 +12,7 @@
       "logo" : "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
       "download" : "https://github.com/netuitive-community-packages/netuitive-packages-browser/archive/master.zip"
     },
-    "compatibility" : [ "BROWSER" ],
+    "compatibility" : [ "BROWSER:BROWSER" ],
     "tags" : [ ],
     "checksum" : null
   },
