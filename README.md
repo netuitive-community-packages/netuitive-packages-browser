@@ -1,6 +1,6 @@
 #netuitive.packages.browser 1.3.5
 
-For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/new_browser_datasource.htm).
+For detailed information on this package, please refer to the [online documentation](https://help.netuitive.com/Content/Integrations/browser.htm).
 
 ##Release History
 
