@@ -75,31 +75,6 @@
       "created" : "2016-03-16T21:49:33Z",
       "updated" : "2016-03-16T21:49:33Z"
     }, {
-      "id" : "9b0c25a3-f19b-48b1-9a47-32c69a41b6b5",
-      "name" : "Events",
-      "description" : null,
-      "widgetType" : "event-ticker",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "elementNameContains" : "Library Inventory - List Page",
-        "showHighest" : "true",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      },
-      "dashboardId" : null,
-      "userId" : null,
-      "created" : "2016-03-16T21:53:43Z",
-      "updated" : "2016-03-16T21:53:43Z"
-    }, {
       "id" : "1c64fe49-7664-4042-9305-736cea318d85",
       "name" : "Response Time Breakdown",
       "description" : null,
