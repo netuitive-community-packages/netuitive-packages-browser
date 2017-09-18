@@ -1,8 +1,13 @@
-# netuitive.packages.browser 1.4.0
+# netuitive.packages.browser
 
 For detailed information on this package, please refer to the [online documentation](https://help.netuitive.com/Content/Integrations/browser.htm).
 
 ## Release History
+
+### Version next
+
+* Updated details dashboard layout
+* Updated summary dashboard to use latest widget confs
 
 ### Version 1.4.0
 
