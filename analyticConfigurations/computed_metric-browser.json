@@ -1,28 +1,25 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "COMPUTED_METRIC",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Browser",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "Browser",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "netuitive.rum.requestcount",
+        "properties": {
+          "expression": "data['netuitive.rum.totalresponsetime'].cnt",
+          "fqn": "netuitive.rum.requestcount"
+        }
+      },
+      {
+        "match": "netuitive.errors.errorpercent",
+        "properties": {
+          "expression": "(data['netuitive.rum.requestcount'].actual == 0) ? 0 : (data['netuitive.errors.errorcount'].actual / data['netuitive.rum.requestcount'].actual) * 100",
+          "fqn": "netuitive.errors.errorpercent"
+        }
+      }
+    ],
+    "name": "Browser",
+    "scope": {
+      "elementType": "Browser"
     },
-    "metrics" : [ {
-      "match" : "netuitive.rum.requestcount",
-      "properties" : {
-        "expression" : "data['netuitive.rum.totalresponsetime'].cnt",
-        "fqn" : "netuitive.rum.requestcount"
-      }
-    }, {
-      "match" : "netuitive.errors.errorpercent",
-      "properties" : {
-        "expression" : "(data['netuitive.rum.requestcount'].actual == 0) ? 0 : (data['netuitive.errors.errorcount'].actual / data['netuitive.rum.requestcount'].actual) * 100",
-        "fqn" : "netuitive.errors.errorpercent"
-      }
-    } ]
+    "type": "COMPUTED_METRIC"
   }
 }
