@@ -1,58 +1,60 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "ACE",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Browser",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "BROWSER",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "netuitive.rum.applicationservertime",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "netuitive.rum.dnslookuptime",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "netuitive.rum.domprocessingtime",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "netuitive.rum.networklatency",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "netuitive.rum.pageloadtime",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "netuitive.rum.pagerendertime",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "netuitive.rum.serverconnecttime",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      }
+    ],
+    "name": "Browser",
+    "scope": {
+      "elementType": "BROWSER"
     },
-    "metrics" : [ {
-      "match" : "netuitive.rum.applicationservertime",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.rum.dnslookuptime",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.rum.domprocessingtime",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.rum.networklatency",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.rum.pageloadtime",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.rum.pagerendertime",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "netuitive.rum.serverconnecttime",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    } ]
+    "type": "ACE"
   }
 }

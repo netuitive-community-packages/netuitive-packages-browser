@@ -1,49 +1,49 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "METRIC_META",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Browser",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "BROWSER",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "netuitive.rum.*time",
+        "properties": {
+          "tags": {
+            "unit": "ms"
+          }
+        }
+      },
+      {
+        "match": "netuitive.rum.networklatency",
+        "properties": {
+          "tags": {
+            "unit": "ms"
+          }
+        }
+      },
+      {
+        "match": "netuitive.errors.errorcount",
+        "properties": {
+          "sparseDataStrategy": "ReplaceWithZero",
+          "statistic": "SUM"
+        }
+      },
+      {
+        "match": "netuitive.rum.requestcount",
+        "properties": {
+          "statistic": "SUM"
+        }
+      },
+      {
+        "match": "netuitive.errors.errorpercent",
+        "properties": {
+          "tags": {
+            "unit": "percent"
+          },
+          "validmax": 100
+        }
+      }
+    ],
+    "name": "Browser",
+    "scope": {
+      "elementType": "BROWSER"
     },
-    "metrics" : [ {
-      "match" : "netuitive.rum.*time",
-      "properties" : {
-        "tags" : {
-          "unit" : "ms"
-        }
-      }
-    }, {
-      "match" : "netuitive.rum.networklatency",
-      "properties" : {
-        "tags" : {
-          "unit" : "ms"
-        }
-      }
-    }, {
-      "match" : "netuitive.errors.errorcount",
-      "properties" : {
-        "sparseDataStrategy" : "ReplaceWithZero",
-        "statistic" : "SUM"
-      }
-    }, {
-      "match" : "netuitive.rum.requestcount",
-      "properties" : {
-        "statistic" : "SUM"
-      }
-    }, {
-      "match" : "netuitive.errors.errorpercent",
-      "properties" : {
-        "tags" : {
-          "unit" : "percent"
-        },
-        "validmax" : 100
-      }
-    } ]
+    "type": "METRIC_META"
   }
 }

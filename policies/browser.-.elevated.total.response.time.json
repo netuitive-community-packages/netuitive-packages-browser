@@ -1,38 +1,25 @@
 {
-  "policy" : {
-    "id" : null,
-    "name" : "Browser - Elevated Total Response Time",
-    "description" : "This policy will raise a WARNING event when the average total response time is higher than is normally expected.",
-    "scope" : {
-      "elementName" : "",
-      "elementNameExclude" : null,
-      "fqnIncludes" : [ ],
-      "fqnExcludes" : [ ],
-      "elementType" : "Browser",
-      "elementTags" : { }
-    },
-    "duration" : 900,
-    "conditions" : [ {
-      "metric" : "netuitive.rum.totalresponsetime",
-      "wildcard" : null,
-      "metricScopeTags" : { },
-      "analytic" : "baselineDeviation",
-      "operator" : ">",
-      "level" : null,
-      "level2" : null,
-      "metricThresholdLevel" : null,
-      "metricThresholdAnalytic" : null
-    } ],
-    "eventConditions" : [ ],
-    "actions" : [ {
-      "type" : "event",
-      "category" : 2
-    } ],
-    "enabled" : true,
-    "deleted" : false,
-    "originTenantId" : null,
-    "originPolicyId" : null,
-    "creatorEmail" : null,
-    "lastUpdated" : null
+  "policy": {
+    "actions": [
+      {
+        "category": 2,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "baselineDeviation",
+        "metric": "netuitive.rum.totalresponsetime",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "This policy will raise a WARNING event when the average total response time is higher than is normally expected.",
+    "duration": 900,
+    "enabled": true,
+    "name": "Browser - Elevated Total Response Time",
+    "scope": {
+      "elementType": "Browser"
+    }
   }
 }

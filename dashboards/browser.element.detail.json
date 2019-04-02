@@ -1,231 +1,147 @@
 {
-  "dashboard" : {
-    "name" : "Browser Element Detail",
-    "description" : null,
-    "layout" : null,
-    "properties" : {
-      "integrationType" : null,
-      "timeRangeDuration" : "3600",
-      "gridstackContents" : "[{\"id\":\"6b403a62-ddb9-49f0-bce6-a0c350f599e0\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"ec11d45f-5202-490a-abce-cd5035b5d05d\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"1c64fe49-7664-4042-9305-736cea318d85\",\"x\":0,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"71b9ce17-bf7a-4951-9766-75dd89d59f49\",\"x\":0,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"66dcfb61-7eee-4b4a-9d43-0ea8224f092e\",\"x\":0,\"y\":27,\"width\":12,\"height\":9},{\"id\":\"1f4fa64b-5599-44bb-a83b-2918aa4df4ab\",\"x\":8,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"f7c1a914-ae8d-4d1c-ac8e-700504ad8664\",\"x\":8,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"5fc2248e-a41c-475c-8c2a-b55da9700bb3\",\"x\":4,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"d67ce132-9c96-4c6d-9a4a-a28dbd65229f\",\"x\":4,\"y\":0,\"width\":4,\"height\":9}]",
-      "refreshIntervalSeconds" : "300",
-      "wrap" : "true"
+  "dashboard": {
+    "name": "Browser Element Detail",
+    "private": false,
+    "properties": {
+      "gridstackContents": "[{\"id\":\"6b403a62-ddb9-49f0-bce6-a0c350f599e0\",\"x\":6,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"ec11d45f-5202-490a-abce-cd5035b5d05d\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"1c64fe49-7664-4042-9305-736cea318d85\",\"x\":0,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"71b9ce17-bf7a-4951-9766-75dd89d59f49\",\"x\":0,\"y\":18,\"width\":6,\"height\":9},{\"id\":\"66dcfb61-7eee-4b4a-9d43-0ea8224f092e\",\"x\":0,\"y\":27,\"width\":12,\"height\":9},{\"id\":\"1f4fa64b-5599-44bb-a83b-2918aa4df4ab\",\"x\":8,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"f7c1a914-ae8d-4d1c-ac8e-700504ad8664\",\"x\":8,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"5fc2248e-a41c-475c-8c2a-b55da9700bb3\",\"x\":4,\"y\":9,\"width\":4,\"height\":9},{\"id\":\"d67ce132-9c96-4c6d-9a4a-a28dbd65229f\",\"x\":4,\"y\":0,\"width\":4,\"height\":9}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true"
     },
-    "widgets" : [ {
-      "id" : "6b403a62-ddb9-49f0-bce6-a0c350f599e0",
-      "name" : "Tags",
-      "description" : null,
-      "widgetType" : "element-tags",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
+    "type": "BROWSER",
+    "widgets": [
+      {
+        "id": "6b403a62-ddb9-49f0-bce6-a0c350f599e0",
+        "name": "Tags",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "element-tags"
+      },
+      {
+        "id": "ec11d45f-5202-490a-abce-cd5035b5d05d",
+        "name": "Current Response Time",
+        "properties": {
+          "metricLimit": "10",
+          "metric_fqn": "netuitive.rum.totalresponsetime",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "visualization": "gauge",
+          "width": "auto"
+        },
+        "widgetType": "metric-status"
+      },
+      {
+        "id": "1c64fe49-7664-4042-9305-736cea318d85",
+        "name": "Response Time Breakdown",
+        "properties": {
+          "elementScopeTypes": "[\"Browser\"]",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"netuitive.rum.redirecttime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.networklatency\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.pageloadtime\",\"aggFns\":[]}]",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "stacked-area"
+      },
+      {
+        "id": "71b9ce17-bf7a-4951-9766-75dd89d59f49",
+        "name": "Attributes",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-attributes"
+      },
+      {
+        "id": "66dcfb61-7eee-4b4a-9d43-0ea8224f092e",
+        "name": "Events",
+        "properties": {
+          "elementScopeTypes": "[\"Browser\"]",
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "medium"
+        },
+        "widgetType": "event-ticker"
+      },
+      {
+        "id": "1f4fa64b-5599-44bb-a83b-2918aa4df4ab",
+        "name": "Page Hits",
+        "properties": {
+          "metricAggs": "[\"sum\"]",
+          "metricLimit": "10",
+          "metric_fqn": "netuitive.rum.requestcount",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "metric-agg"
+      },
+      {
+        "id": "f7c1a914-ae8d-4d1c-ac8e-700504ad8664",
+        "name": "Page Load Time Breakdown",
+        "properties": {
+          "elementScopeTypes": "[\"Browser\"]",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"netuitive.rum.domprocessingtime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.pagerendertime\",\"aggFns\":[]}]",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "stacked-area"
+      },
+      {
+        "id": "5fc2248e-a41c-475c-8c2a-b55da9700bb3",
+        "name": "Network Latency Breakdown",
+        "properties": {
+          "elementScopeTypes": "[\"Browser\"]",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"netuitive.rum.dnslookuptime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.serverconnecttime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.applicationservertime\",\"aggFns\":[]}]",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "stacked-area"
+      },
+      {
+        "id": "d67ce132-9c96-4c6d-9a4a-a28dbd65229f",
+        "name": "Response Time",
+        "properties": {
+          "metricAggs": "[\"avg\"]",
+          "metricLimit": "10",
+          "metric_fqn": "netuitive.rum.totalresponsetime",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "metric-time-series"
       }
-    }, {
-      "id" : "ec11d45f-5202-490a-abce-cd5035b5d05d",
-      "name" : "Current Response Time",
-      "description" : null,
-      "widgetType" : "metric-status",
-      "properties" : {
-        "visualization" : "gauge",
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "netuitive.rum.totalresponsetime",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "1c64fe49-7664-4042-9305-736cea318d85",
-      "name" : "Response Time Breakdown",
-      "description" : null,
-      "widgetType" : "stacked-area",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[\"Browser\"]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : "",
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "width" : "medium",
-        "metrics" : "[{\"fqn\":\"netuitive.rum.redirecttime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.networklatency\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.pageloadtime\",\"aggFns\":[]}]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "71b9ce17-bf7a-4951-9766-75dd89d59f49",
-      "name" : "Attributes",
-      "description" : null,
-      "widgetType" : "element-attributes",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "66dcfb61-7eee-4b4a-9d43-0ea8224f092e",
-      "name" : "Events",
-      "description" : null,
-      "widgetType" : "event-ticker",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[\"Browser\"]",
-        "metricLimit" : "10",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "width" : "medium",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "1f4fa64b-5599-44bb-a83b-2918aa4df4ab",
-      "name" : "Page Hits",
-      "description" : null,
-      "widgetType" : "metric-agg",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "metricUnit" : null,
-        "metricAggs" : "[\"sum\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : null,
-        "showHighest" : "true",
-        "metric_fqn" : "netuitive.rum.requestcount",
-        "metricScopeTags" : "[]",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "f7c1a914-ae8d-4d1c-ac8e-700504ad8664",
-      "name" : "Page Load Time Breakdown",
-      "description" : null,
-      "widgetType" : "stacked-area",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "elementScopeTypes" : "[\"Browser\"]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "elementNameContains" : "",
-        "showHighest" : "true",
-        "width" : "auto",
-        "metrics" : "[{\"fqn\":\"netuitive.rum.domprocessingtime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.pagerendertime\",\"aggFns\":[]}]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "5fc2248e-a41c-475c-8c2a-b55da9700bb3",
-      "name" : "Network Latency Breakdown",
-      "description" : null,
-      "widgetType" : "stacked-area",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "elementScopeTypes" : "[\"Browser\"]",
-        "metricLimit" : "10",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "width" : "auto",
-        "metrics" : "[{\"fqn\":\"netuitive.rum.dnslookuptime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.serverconnecttime\",\"aggFns\":[]},{\"fqn\":\"netuitive.rum.applicationservertime\",\"aggFns\":[]}]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "d67ce132-9c96-4c6d-9a4a-a28dbd65229f",
-      "name" : "Response Time",
-      "description" : null,
-      "widgetType" : "metric-time-series",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "metricAggs" : "[\"avg\"]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "netuitive.rum.totalresponsetime",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    } ],
-    "type" : "BROWSER",
-    "private" : false
+    ]
   }
 }
