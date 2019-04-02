@@ -2,6 +2,8 @@
 
 ### Version next
 
+### Version 1.5.1
+
 * Add a deprecation notice
 * Adjusted build to use metricly-cli for validation
 
